@@ -5,6 +5,10 @@ body {
   font-size: 12px;
 }
 
+header {
+  --color-blue: #00acdc;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +28,10 @@ a {
   padding: 0;
 }
 
+a:hover {
+  color: var(--color-blue);
+  cursor: pointer;
+}
 
 .header {
   display: flex;
@@ -36,15 +44,13 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
 }
 
 .link {
   display: flex;
   align-items: center;
-  height: 60px;
-  gap: 20px;
   margin-right: 50px;
+  height: 60px;
 }
 
 .link-logo {
@@ -58,27 +64,27 @@ a {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  margin-left: 20px;
+  height: 60px;
+  position: relative;
 }
 
-a:hover {
-  color: #00acdc;
-  cursor: pointer;
-}
 
 .is-active {
-  color: #00acdc;
+  color: var(--color-blue);
   height: 100%;
-  position: relative;
+  margin-left: 0;
 }
 
 .is-active::after {
   content: '';
   display: block;
-  background-color: #00acdc;
+  background-color: var(--color-blue);
   height: 4px;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   border-radius: 5px;
 }
