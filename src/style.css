@@ -5,7 +5,7 @@ body {
   font-size: 12px;
 }
 
-header {
+:root {
   --color-blue: #00acdc;
 }
 
@@ -21,7 +21,7 @@ ol {
   padding-left: 0;
 }
 
-a {
+.nav__link {
   text-decoration: none;
   color: inherit;
   margin: 0;
@@ -53,14 +53,14 @@ a:hover {
   height: 60px;
 }
 
-.link-logo {
+.logo-link {
   display: flex;
   align-items: center;
   margin-left: 50px;
   height: max-content;
 }
 
-.link-style {
+.nav__list {
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -69,10 +69,8 @@ a:hover {
   position: relative;
 }
 
-
 .is-active {
   color: var(--color-blue);
-  height: 100%;
   margin-left: 0;
 }
 
